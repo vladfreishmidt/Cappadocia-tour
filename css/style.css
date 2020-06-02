@@ -1,0 +1,123 @@
+*,
+*::after,
+*::before {
+   box-sizing: border-box; 
+}
+
+@font-face {
+   font-family: 'balqis';
+   src: url('../fonts/balqis.woff2') format('woff2'),
+        url('../fonts/balqis.woff') format('woff');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+}
+
+@font-face {
+   font-family: 'RobotoCondensed-Light';
+   src: url('../fonts/RobotoCondensed-Light.woff2') format('woff2'),
+        url('../fonts/RobotoCondensed-Light.woff') format('woff');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+}
+
+@font-face {
+   font-family: 'RobotoCondensed-LightItalic';
+   src: url('../fonts/RobotoCondensed-LightItalic.woff2') format('woff2'),
+        url('../fonts/RobotoCondensed-LightItalic.woff') format('woff');
+        font-weight: 300;
+        font-style: italic;
+        font-display: swap;
+}
+
+@font-face {
+   font-family: 'RobotoCondensed-Regular';
+   src: url('../fonts/RobotoCondensed-Regular.woff2') format('woff2'),
+        url('../fonts/RobotoCondensed-Regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+}
+
+body {
+    color: inherit;
+    font-family: 'RobotoCondensed-Light';
+    color: #000;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    height: 100vh;
+    background-image: url(../images/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.header__top {
+    font-family: 'RobotoCondensed-Regular';
+    display: flex;
+    justify-content: space-between;
+    padding-top: 72px;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.menu__list-item {
+    display: inline-block;
+}
+
+.menu__list-item + .menu__list-item {
+    margin-left: 52px;
+}
+
+.menu__list-link:hover {
+    text-decoration: underline;
+}
+
+.header__phone {
+    padding-left: 40px;
+    position: relative;
+}
+
+.header__phone::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/phone-icon.svg);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.header__title {
+    padding-top: 152px;
+    text-align: center;
+    font-family: 'balqis';
+    font-size: 250px;
+    line-height: 334px;
+    font-weight: 300;
+}
+
+.header__title span {
+    display: block;
+    font-family: 'RobotoCondensed-LightItalic';
+    text-align: right;
+    font-size: 56px;
+    line-height: 66px;
+    margin-top: -66px;
+    margin-right: 85px;
+}
