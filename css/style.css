@@ -48,6 +48,10 @@ body {
     line-height: 21px;
 }
 
+ul {
+    list-style: none;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -57,6 +61,29 @@ a {
     max-width: 1230px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.page-section {
+    margin: 200px auto;
+    max-width: 1920px;
+}
+
+.title {
+    font-family: 'balqis';
+    font-weight: 300;
+    font-size: 96px;
+    line-height: 128px;
+    color: #E2AB3F;
+    margin-bottom: 100px;
+}
+
+.title span {
+    font-family: 'RobotoCondensed-LightItalic';
+    font-size: 24px;
+    line-height: 28px;
+    color: #000;
+    display: block;
+    margin-top: -30px;
 }
 
 .header {
@@ -120,4 +147,132 @@ a {
     line-height: 66px;
     margin-top: -66px;
     margin-right: 85px;
+}
+
+
+.fairy-tail__slider {
+    width: 50%;
+}
+
+.slick-btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    cursor: pointer; 
+}
+
+.slick-prev {
+    left: 0;
+}
+.slick-next {
+    right: 0;
+}
+
+.fairy-tail__inner {
+    position: relative;
+}
+
+.fairy-tail__container,
+.our-trip__container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.fairy-tail__body {
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+    padding-left: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.fairy-tail__body-title {
+    font-family: 'RobotoCondensed-Regular';
+}
+
+.fairy-tail__title span {
+    margin-left: 185px;
+}
+
+.fairy-tail__text {
+    padding: 10px 0;
+}
+
+.our-trip__slider {
+    width: 50%;
+    margin-left: auto;
+}
+
+.our-trip__inner {
+    position: relative;
+}
+
+.our-trip__title span {
+    margin-left: 240px;
+}
+
+.our-trip__body {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.our-trip__list {
+    margin: 5px 0;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.our-trip__list li:first-child {
+    font-family: 'RobotoCondensed-Regular';
+    margin-bottom: 20px;
+}
+
+.our-trip__btn {
+    font-size: 24px;
+    line-height: 28px;
+    padding: 11px 54px;
+    border: 1px solid #E2AB3F;
+}
+
+.hotel__title span {
+    margin-left: 120px;
+}
+
+.hotel__inner {
+    display: flex;
+}
+
+.hotel__images {
+    margin-right: 100px;
+}
+
+.hotel__text {
+    margin-bottom: 20px;
+}
+
+.hotel__gallery {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hotel__gallery a {
+    margin-top: 50px;
 }
